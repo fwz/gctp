@@ -1,4 +1,4 @@
-## 
+## Guitar Chord Tab Parser
 A naive script to transpose and roll chord tab in terminal
 
 ## Usage
@@ -42,4 +42,4 @@ D#m       A#m7
 ()一字一句 认真(消)遣了
 B           C#
 沸腾(着)  沉默(了)
-```
+
