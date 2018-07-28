@@ -81,7 +81,7 @@ def transfer_key(tone, diff):
 if __name__ == "__main__":
     parser = OptionParser()
     parser.add_option("-t", "--tone", dest="tune", help="the tone you wanna switched to", default="c")
-    parser.add_option("-d", "--delay", dest="delay", help="0 for instant roll, 3 for normal roll speed", default="0")
+    parser.add_option("-s", "--speed", dest="speed", help="between 1-5, 0 for instant roll, 3 for normal roll speed", default="0")
     parser.add_option("-f", "--file_path", dest="file_path", help="chord file path", default="data/小人物-金玟岐.gctp")
     (options, args) = parser.parse_args()
 
@@ -89,4 +89,6 @@ if __name__ == "__main__":
 
     with open(options.file_path) as f:
         lines = "".join(f.readlines())
-        tp.play(lines=lines.split("\n"), target_tone=options.tune.upper(), delay=float(options.delay))
+        speed = float(options.speed)
+        tp.play(lines=lines.split("\n"), target_tone=options.tune.upper(), \
+        delay= 5.0/speed if speed > 0 else 0)

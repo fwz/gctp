@@ -8,11 +8,11 @@ Usage: tab_parser.py [options]
 Options:
   -h, --help            show this help message and exit
   -t TUNE, --tone=TUNE  the tone you wanna switched to
-  -d DELAY, --delay=DELAY
-                        0 for instant, 3 for normal roll speed
+  -s SPEED, --speed=SPEED
+                        between 1-5, 0 for instant roll, 3 for normal roll
+                        speed
   -f FILE_PATH, --file_path=FILE_PATH
                         chord file path
-
 
 ```
 
@@ -42,4 +42,3 @@ D#m       A#m7
 ()一字一句 认真(消)遣了
 B           C#
 沸腾(着)  沉默(了)
-
